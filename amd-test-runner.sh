@@ -7,6 +7,7 @@ singularity pull matin-julia-roc4.2.sif docker://christophernhill/matin-julia:ro
 export JULIA_DEPOT_PATH=`pwd`/.julia
 export TEST_GROUP=quick_amd
 export RDIR=`pwd`
+export JULIA_NUM_THREADS=1
 cat > myscript.jl <<EOFA
 using InteractiveUtils
 versioninfo(verbose=true)
