@@ -22,5 +22,6 @@ singularity run --bind `pwd`:`pwd` matin-julia-roc4.2.sif <<!
 cd ${RDIR}
 export JULIA_DEPOT_PATH=${JULIA_DEPOT_PATH}
 export TEST_GROUP=${TEST_GROUP}
+export JULIA_NUM_THREADS=${JULIA_NUM_THREADS}
 julia --project=. myscript.jl
 !
